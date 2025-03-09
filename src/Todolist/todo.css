@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.todo-container {
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.todo-container h1{
+    text-align: center;
+}
+.container{
+    background-color: #f0f0f0;
+    width: 50%;
+    min-width: 380px;
+    height: fit-content;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.addButton{
+    background-color: #4CAF50;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 10px;
+    color: white;
+    &:hover{
+        background-color: #3e8e41;
+    }
+}
+.input-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.input-container input{
+    padding: 0 5px;
+    border: none;
+    background: transparent;
+    margin: 0 5px;
+    min-width: 80px;
+}
+.input-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.remButton{
+    margin-left: 20px;
+    background-color: rgba(243, 11, 11, 0.849);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+.outputBox ul{
+    padding-top: 30px;
+    /* border: solid; */
+}
+.outputBox ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px ;
+    width: 100%;
+}
+.showValue{
+    overflow: hidden;
+    width: 50%;
+}
+.noData{
+    text-align: center;
+}
+.clearBtn{
+    text-align: center;
+    margin: 20px;
+}
